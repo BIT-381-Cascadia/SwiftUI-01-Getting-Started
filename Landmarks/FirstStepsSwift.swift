@@ -12,39 +12,34 @@ struct FirstStepsSwift: View {
     var body: some View {
         VStack {
             VStack {
-                Text("Tornado")
-                    .font(.title)
+                Text("Calm The Storm")
+                    .font(.largeTitle)
                     .fontWeight(.semibold)
-                    .foregroundColor(Color.gray)
-                    .padding(.top)
+                    .padding(44.0)
                 Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Button")/*@END_MENU_TOKEN@*/
+                    Text("Tornado")
+                        .fontWeight(.semibold)
+                        .padding(20)
+                        .foregroundColor(.gray)
                 }
-                Text("Wildfire")
-                    .font(.title)
-                    .fontWeight(.semibold)
-                    .foregroundColor(Color.orange)
-                    .padding(.top)
                 Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Button")/*@END_MENU_TOKEN@*/
+                    Text("Wildfire")
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.orange)
+                        .padding(20)
                 }
-                Text("Earthquake")
-                    .font(.title)
-                    .fontWeight(.semibold)
-                    .foregroundColor(Color.green)
-                    .padding(.top)
                 Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Button")/*@END_MENU_TOKEN@*/
+                    Text("Earthquake")
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.green)
+                        .padding(20)
                 }
-                Text("Volcano")
-                    .font(.title)
-                    .fontWeight(.semibold)
-                    .foregroundColor(Color.red)
-                    .padding(.top)
-                
-            }
-            Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Button")/*@END_MENU_TOKEN@*/
+                Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
+                    Text("Volcano")
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.red)
+                        .padding(20)
+                }
             }
         }
     }
