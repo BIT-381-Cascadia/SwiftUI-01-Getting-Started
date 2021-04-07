@@ -6,6 +6,8 @@ A view showing the details for a landmark.
 */
 
 import SwiftUI
+import AVKit
+
 
 struct ContentView: View {
     var body: some View {
@@ -34,9 +36,24 @@ struct ContentView: View {
 
                 Text("About Turtle Rock")
                     .font(.title2)
-                Text("Descriptive text goes here.")
+                Text("Turtle Rock is a park with a rock that kinda lkooks like a turtle and also there's a zelda dungeon with the same name and thats what i found when i googled it.")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+                
             }
             .padding()
+            Text("Free trip to Turtle Rock, just press the button below!")
+            Button("Teleport to Turtle Rock"){
+                print("Button pressed! Have fun on your trip!")
+            }
+            .font(.title)
+            .padding(20)
+            Spacer()
+            Text("This video also is titled Turtle Rock, wow.")
+                .font(.title)
+            VideoPlayer(player: AVPlayer(url: URL(string: "https://www.youtube.com/watch?v=aUbkAU6hFaM")!))
+                .frame(height: 400)
+            
 
             Spacer()
         }
