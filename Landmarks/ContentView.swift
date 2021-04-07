@@ -9,42 +9,57 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        ZStack {
+                Color.blue
+                    .ignoresSafeArea()
+        
         VStack {
-            MapView()
-                .ignoresSafeArea(edges: .top)
-                .frame(height: 300)
-
             CircleImage()
+                Spacer()
+                .frame(height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .offset(y: -130)
-                .padding(.bottom, -130)
-
+                .padding(.bottom, -230)
+            Text("^^^^^An image would go here^^^^^")
+            Spacer().padding()
             VStack(alignment: .leading) {
-                Text("Turtle Rock")
+                Text("This is not the text you are looking for...")
                     .font(.title)
 
                 HStack {
-                    Text("Joshua Tree National Park")
-                    Spacer()
-                    Text("California")
+                    Text("This isn't the text we're looking for.").font(.body)
                 }
                 .font(.subheadline)
                 .foregroundColor(.secondary)
 
                 Divider()
 
-                Text("About Turtle Rock")
-                    .font(.title2)
-                Text("Descriptive text goes here.")
+                Text("Move along...")
+                    .font(.title)
+                Text("Move along.")
+                    .font(.body)
+                Spacer()
+                VStack {
+                    HStack{
+                            Spacer()
+                        Text("home\nbtn\nhere").foregroundColor(.white)
+                            Spacer()
+                        Text("highlights\nbtn\nhere").foregroundColor(.white)
+                            Spacer()
+                        Text("events\nbtn\nhere").foregroundColor(.white)
+                            Spacer()
+                        Text("profile\nbtn\nhere").foregroundColor(.white)
+                            Spacer()
+                    }
+                }
             }
-            .padding()
-
-            Spacer()
+            
         }
     }
-}
+    }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
 }
