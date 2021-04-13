@@ -14,6 +14,7 @@
 		C20D77FD24B668F4002E7AEA /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D77FC24B668F4002E7AEA /* CircleImage.swift */; };
 		C20D77FF24B67FB3002E7AEA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D77FE24B67FB3002E7AEA /* MapView.swift */; };
 		E49A4916261B9D0E00162AEB /* MyAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A4915261B9D0E00162AEB /* MyAppConfig.swift */; };
+		E930234926261B9500FD8C57 /* SwiftUIView_my_add.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930234826261B8600FD8C57 /* SwiftUIView_my_add.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C2AC4E8924DE1856005E019B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D37C64DBD0434958E334DB7A /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		E49A4915261B9D0E00162AEB /* MyAppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppConfig.swift; sourceTree = "<group>"; };
+		E930234826261B8600FD8C57 /* SwiftUIView_my_add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView_my_add.swift; sourceTree = "<group>"; };
 		EAFCC7FAFBD54E954DE59292 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 			children = (
 				C20D77ED24B665D7002E7AEA /* LandmarksApp.swift */,
 				C20D77EF24B665D7002E7AEA /* ContentView.swift */,
+				E930234826261B8600FD8C57 /* SwiftUIView_my_add.swift */,
 				C20D77FC24B668F4002E7AEA /* CircleImage.swift */,
 				C20D77FE24B67FB3002E7AEA /* MapView.swift */,
 				C20D77F124B665D8002E7AEA /* Assets.xcassets */,
@@ -174,6 +177,7 @@
 				C20D77FF24B67FB3002E7AEA /* MapView.swift in Sources */,
 				E49A4916261B9D0E00162AEB /* MyAppConfig.swift in Sources */,
 				C20D77EE24B665D7002E7AEA /* LandmarksApp.swift in Sources */,
+				E930234926261B9500FD8C57 /* SwiftUIView_my_add.swift in Sources */,
 				C20D77FD24B668F4002E7AEA /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
