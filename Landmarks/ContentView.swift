@@ -8,11 +8,9 @@ A view showing the details for a landmark.
 import SwiftUI
 
 struct ContentView: View {
+    @State private var Details = false
     var body: some View {
         VStack {
-
-
-
             VStack(alignment: .leading) {
                 Text("253 YUP")
                     .font(.title)
@@ -21,14 +19,9 @@ struct ContentView: View {
                     Text("Tacome Area youth Ultimate Program")
                     Spacer()
                     Text("Tacoma")
-                    
-                    
                 }
-                
                 .font(.subheadline)
                 .foregroundColor(.secondary)
-                
-                
                 
                 Divider()
 
@@ -44,9 +37,14 @@ Text("")
             Text("Click below for event info")
 
             Spacer()
-                Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Button")/*@END_MENU_TOKEN@*/
+                Button("Show Details") {Details.toggle()
+                    
                 }
+                if Details {
+                    Text("You clicked the Button and here is Event Info")
+                }
+                Spacer()
+
                 Spacer()
             }
         }
