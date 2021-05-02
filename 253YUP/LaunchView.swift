@@ -12,10 +12,11 @@ struct LaunchView: View {
     var body: some View {
         
         VStack {
-            Spacer(minLength: 768)
+            Spacer(minLength: 500)
             Text("Connecting to 253YUP")
                 .foregroundColor(Color.white)
                 .scaledToFill()
+            Spacer(minLength: 16)
         }
         .padding()
         .background(
@@ -23,7 +24,7 @@ struct LaunchView: View {
                 .resizable()
                 .scaledToFill()
         )
-        .background(Color.blue)
+        .padding(0)
     }
     
 
