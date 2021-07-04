@@ -8,37 +8,45 @@ A view showing the details for a landmark.
 import SwiftUI
 
 struct ContentView: View {
+    @State private var Details = false
     var body: some View {
         VStack {
-            MapView()
-                .ignoresSafeArea(edges: .top)
-                .frame(height: 300)
-
-            CircleImage()
-                .offset(y: -130)
-                .padding(.bottom, -130)
-
             VStack(alignment: .leading) {
-                Text("Turtle Rock")
+                Text("253 YUP")
                     .font(.title)
 
                 HStack {
-                    Text("Joshua Tree National Park")
+                    Text("Tacome Area youth Ultimate Program")
                     Spacer()
-                    Text("California")
+                    Text("Tacoma")
                 }
                 .font(.subheadline)
                 .foregroundColor(.secondary)
-
+                
                 Divider()
 
-                Text("About Turtle Rock")
+                Text("About 253")
                     .font(.title2)
-                Text("Descriptive text goes here.")
+                Text("To embed equity, radically diversify, improve, promote and empower youth ultimate in the Greater Tacoma area.")
+Text("")
+                Text("Mission - To create a youth ultimate program in the Greater Tacoma area that provides a radically inclusive, empowered, and joyful community.")
             }
             .padding()
+            CircleImage()
+            VStack {
+            Text("Click below for event info")
 
             Spacer()
+                Button("Show Details") {Details.toggle()
+                    
+                }
+                if Details {
+                    Text("You clicked the Button and here is Event Info")
+                }
+                Spacer()
+
+                Spacer()
+            }
         }
     }
 }
